@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { site } from '@/lib/site';
+import { site } from '../lib/site';
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container footer-row">
         <div>
           <strong>{site.name}</strong>
-          <div>Поддержка: <a href={`mailto:${site.supportEmail}`}>{site.supportEmail}</a></div>
+          <div>Поддержка: {site.supportEmail}</div>
         </div>
         <div className="footer-links">
           <Link href="/offer">Оферта</Link>
