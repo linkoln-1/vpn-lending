@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             <h2>3. Контакты</h2>
             <p>По вопросам обработки данных напишите на {site.supportEmail}.</p>
             <h2>4. Продавец</h2>
-            <p>{site.seller.status}, {site.seller.fullName}, ИНН {site.seller.inn}, {site.seller.city}</p>
+            <p>{site.seller.status}, {site.seller.fullName}</p>
           </section>
         </div>
       </main>
