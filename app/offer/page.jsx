@@ -16,7 +16,6 @@ export default function OfferPage() {
           <div className="badge">Документ для покупателей</div>
           <h1>Публичная оферта</h1>
           <p className="lead">Условия покупки цифровой подписки {site.name}.</p>
-          <div className="notice">Перед модерацией замените данные продавца в файле <strong>lib/site.js</strong>.</div>
           <section className="legal-box">
             <h2>1. Предмет</h2>
             <p>Пользователь приобретает цифровую подписку на сервис защищенного соединения. Доступ выдается через Telegram-бота после подтверждения оплаты.</p>
@@ -24,8 +23,8 @@ export default function OfferPage() {
             <p>Стоимость указана на странице тарифов. Подписка активируется после успешной онлайн-оплаты.</p>
             <h2>3. Поддержка</h2>
             <p>Контакт поддержки: {site.supportEmail}</p>
-            <h2>4. Реквизиты продавца</h2>
-            <p>{site.seller.status}, {site.seller.fullName}, ИНН {site.seller.inn}, {site.seller.city}</p>
+            <h2>4. Продавец</h2>
+            <p>{site.seller.status}, {site.seller.fullName}</p>
           </section>
         </div>
       </main>
