@@ -1,6 +1,6 @@
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
-import { site } from '../../lib/site';
+import { getTelegramUrl, site } from '../../lib/site';
 
 export const metadata = {
   title: `${site.name} — VPN-подписка`,
@@ -20,7 +20,7 @@ export default function VpnPage() {
               {site.name} предоставляет цифровой доступ к защищенному соединению на выбранный срок. Оплата проходит онлайн, а данные для подключения выдаются через Telegram-бота.
             </p>
             <div className="actions">
-              <a className="button primary" href={`https://t.me/${site.botUsername}`} target="_blank" rel="noreferrer">Перейти к оплате</a>
+              <a className="button primary" href={getTelegramUrl()} target="_blank" rel="noreferrer">Перейти к оплате</a>
               <a className="button" href="#tariffs">Посмотреть тарифы</a>
             </div>
             <div className="stats">
@@ -43,7 +43,7 @@ export default function VpnPage() {
                   <h3>{tariff.title}</h3>
                   <p>{tariff.description}</p>
                   <div className="price">{tariff.price}</div>
-                  <a className="button primary" href={`https://t.me/${site.botUsername}`} target="_blank" rel="noreferrer">Оформить</a>
+                  <a className="button primary" href={getTelegramUrl()} target="_blank" rel="noreferrer">Оформить</a>
                 </article>
               ))}
             </div>
@@ -70,7 +70,7 @@ export default function VpnPage() {
               <h2>Информация для покупателей</h2>
               <p>Услуга является цифровой подпиской. Сервис предназначен для защиты интернет-соединения, в том числе при использовании публичных Wi-Fi сетей. Использование сервиса для противоправных действий запрещено.</p>
               <p><strong>Контакты поддержки:</strong> {site.supportEmail}</p>
-              <p><strong>Продавец:</strong> {site.seller.status}, {site.seller.fullName}, ИНН {site.seller.inn}, {site.seller.city}</p>
+              <p><strong>Продавец:</strong> {site.seller.status}, {site.seller.fullName}</p>
               <div className="actions">
                 <a className="button" href="/offer">Оферта</a>
                 <a className="button" href="/refund">Условия возврата</a>
