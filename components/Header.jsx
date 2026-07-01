@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { site } from '../lib/site';
+import { getTelegramUrl, site } from '../lib/site';
 
 export function Header() {
   return (
@@ -18,7 +18,7 @@ export function Header() {
           <Link href="/privacy">Политика</Link>
         </nav>
 
-        <a className="button" href={`https://t.me/${site.botUsername}`} target="_blank" rel="noreferrer">
+        <a className="button" href={getTelegramUrl()} target="_blank" rel="noreferrer">
           Telegram-бот
         </a>
       </div>
