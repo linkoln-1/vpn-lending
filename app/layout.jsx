@@ -1,5 +1,5 @@
 import './globals.css';
-import { site } from '@/lib/site';
+import { site } from '../lib/site';
 
 export const metadata = {
   title: `${site.name} — цифровая подписка`,
