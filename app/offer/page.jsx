@@ -24,7 +24,10 @@ export default function OfferPage() {
             <h2>3. Поддержка</h2>
             <p>Контакт поддержки: {site.supportEmail}</p>
             <h2>4. Продавец</h2>
-            <p>{site.seller.status}, {site.seller.fullName}</p>
+            <p>{site.seller.status} {site.seller.fullName}</p>
+            <p>ИНН: {site.seller.inn}</p>
+            <p>ОГРНИП: {site.seller.ogrnip}</p>
+            <p>Дата регистрации: {site.seller.registrationDate}</p>
           </section>
         </div>
       </main>
