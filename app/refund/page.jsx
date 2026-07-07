@@ -23,6 +23,10 @@ export default function RefundPage() {
             <p>Если доступ уже выдан и подписка активирована, обращение рассматривается индивидуально через поддержку.</p>
             <h2>3. Как запросить возврат</h2>
             <p>Напишите на {site.supportEmail}. Укажите дату оплаты, выбранный тариф и причину обращения.</p>
+            <h2>4. Продавец</h2>
+            <p>{site.seller.status} {site.seller.fullName}</p>
+            <p>ИНН: {site.seller.inn}</p>
+            <p>ОГРНИП: {site.seller.ogrnip}</p>
           </section>
         </div>
       </main>
