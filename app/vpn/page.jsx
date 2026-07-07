@@ -70,7 +70,7 @@ export default function VpnPage() {
               <h2>Информация для покупателей</h2>
               <p>Услуга является цифровой подпиской. Сервис предназначен для защиты интернет-соединения, в том числе при использовании публичных Wi-Fi сетей. Использование сервиса для противоправных действий запрещено.</p>
               <p><strong>Контакты поддержки:</strong> {site.supportEmail}</p>
-              <p><strong>Продавец:</strong> {site.seller.status}, {site.seller.fullName}</p>
+              <p><strong>Продавец:</strong> {site.seller.status} {site.seller.fullName}</p>
               <div className="actions">
                 <a className="button" href="/offer">Оферта</a>
                 <a className="button" href="/refund">Условия возврата</a>
